@@ -1,0 +1,28 @@
+<div class="navbar navbar-inverse navbar-static-top" role="navigation"
+        data-ng-controller="topnavController as vm">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" data-ng-class="{active: vm.isRoute('home')}"
+                    data-ng-href="#/">Clarkio</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li class="navbar-inverse" data-ng-class="{active: vm.isRoute('blog')}">-->
+                    <!--<a data-ng-href="#/blog">Blog</a>-->
+                <!--</li>-->
+                <li data-ng-class="{active: vm.isRoute('about')}">
+                    <a data-ng-href="#/about">About</a>
+                </li>
+                <li data-ng-class="{active: vm.isRoute('contact')}">
+                    <a data-ng-href="#/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
